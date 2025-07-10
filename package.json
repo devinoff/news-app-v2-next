@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev -p 35302",
     "build": "next build",
-    "start": "next start -p 35302",
+    "start": "next start",
     "lint": "next lint",
     "code": "python all_code.py"
   },

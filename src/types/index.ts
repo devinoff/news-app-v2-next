@@ -18,9 +18,12 @@ export interface CategoryInterface {
 }
 
 export interface BriefingInterface {
-    last_updated_at: string;
+    last_updated_at_iso: string;
+    last_updated_at_formatted: string;
     categories: CategoryInterface[];
 }
+
+// MESSAGES
 
 export interface MessagesInterface {
     errorHeading: string;
@@ -28,6 +31,9 @@ export interface MessagesInterface {
     lastTimeUpdated: string;
     disclaimer: string;
     rightNowInRiga: string;
+    lastTimeUpdatedWarning: string;
+    footerHeading: string;
+    footerItems: { id: number; heading: string; paragraph: string; }[]
 }
 
 

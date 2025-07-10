@@ -13,7 +13,6 @@
   "description": "A next.js webpage showing news data from dvx-news-app-v2-express",
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
-    "dotenv": "^17.2.0",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

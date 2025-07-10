@@ -28,6 +28,7 @@ export interface BriefingInterface {
 export interface MessagesInterface {
     errorHeading: string;
     errorParagraph: string;
+    errorTryAgain: string;
     lastTimeUpdated: string;
     disclaimer: string;
     rightNowInRiga: string;

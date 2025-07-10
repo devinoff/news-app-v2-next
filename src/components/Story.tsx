@@ -38,7 +38,7 @@ export default function Story({ story }: { story: StoryInterface }): ReactElemen
                                 <small className='max-sm:hidden h-3 leading-3 transition-all duration-200 ease-in-out opacity-100 sm:opacity-0 group-hover/source:opacity-100 max-w-24 sm:max-w-0 group-hover/source:max-w-24 pl-2 sm:pl-0 group-hover/source:pl-2 pointer-events-none'>
                                     {labels[source.name]}
                                 </small>
-                                <div className='absolute hidden lg:flex left-0 bottom-9 w-72 flex-col gap-2 p-4 bg-zinc-300/60 dark:bg-zinc-800/60 backdrop-blur-md rounded-md transition-all duration-200 ease-in-out opacity-0 group-hover/source:opacity-100 translate-y-4 group-hover/source:translate-y-0 pointer-events-none'>
+                                <div className='absolute hidden lg:flex left-0 bottom-9 w-72 flex-col gap-2 p-4 bg-gradient-to-br from-zinc-300/60 to-primary/20 dark:from-zinc-800/60 backdrop-blur-md rounded-md transition-all duration-200 ease-in-out opacity-0 group-hover/source:opacity-100 translate-y-4 group-hover/source:translate-y-0 pointer-events-none'>
                                     <h3>{source.title}</h3>
                                     <h4 className='text-xs'>Publicēts: {source.published_at}</h4>
                                 </div>

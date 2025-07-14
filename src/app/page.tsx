@@ -6,7 +6,7 @@ import {messages} from "@/app/messages";
 import {config} from "@/app/config";
 
 export default async function Home() {
-    const briefingResponse = await fetch(config.briefingApiUrl, { next: { revalidate: 300 } });
+    const briefingResponse = await fetch(config.briefingApiUrl, { cache: 'no-store' });
     if (!briefingResponse.ok) {
         throw new Error(`Failed to load briefing: ${briefingResponse.status} ${briefingResponse.statusText}`);
     }

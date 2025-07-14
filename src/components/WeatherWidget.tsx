@@ -4,7 +4,7 @@ import {config} from "@/app/config";
 
 export default async function WeatherWidget() {
     try {
-        const response = await fetch(`https://api.weatherapi.com/v1/current.json?q=Riga&key=${config.weatherApiKey}`, { next: { revalidate: 300 } });
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?q=Riga&key=${config.weatherApiKey}`, { cache: 'no-store' });
 
         if (!response.ok) return null;
 

@@ -1,6 +1,7 @@
 import {weatherCodes} from "@/lib/weatherCodes";
 import {WeatherData} from "@/types";
-import {config} from "@/app/config";
+import {config} from "@/config";
+import {messages} from "@/messages";
 
 export default async function WeatherWidget() {
     try {
@@ -16,7 +17,7 @@ export default async function WeatherWidget() {
         const fullConditionText = condition ? `${condition.emoji} ${condition.text}` : '';
         return (
             <div className='bg-primary/20 px-5 py-2 sm:rounded-md text-[15px] fixed top-0 sm:top-2 backdrop-blur-md border border-primary/40 flex sm:gap-10 w-full sm:w-fit justify-between sm:justify-center z-50'>
-                <span className='text-left'>Šobrīd Rīgā: {data.current.temp_c}°C</span>
+                <span className='text-left'>{messages.rightNowInRiga}: {data.current.temp_c}°C</span>
                 <span className='text-right'>{fullConditionText}</span>
             </div>
         );

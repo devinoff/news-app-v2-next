@@ -1,9 +1,9 @@
 import {GithubLogoIcon, NewspaperIcon} from "@phosphor-icons/react/ssr";
 import Story from "@/components/Story";
 import WeatherWidget from "@/components/WeatherWidget";
-import {BriefingInterface} from "../types";
-import {messages} from "@/app/messages";
-import {config} from "@/app/config";
+import {BriefingInterface} from "@/types";
+import {messages} from "@/messages";
+import {config} from "@/config";
 
 export default async function Home() {
     const briefingResponse = await fetch(config.briefingApiUrl, { cache: 'no-store' });

@@ -7,6 +7,9 @@ export const messages: MessagesInterface = {
     lastTimeUpdated: 'Pēdējo reizi atjaunināts',
     disclaimer: 'Šis ziņu apkopojums ir veidots un kategorizēts ar mākslīgā intelekta (Google Gemini 2.5 Flash) palīdzību. Lūdzu, ņemiet vērā, ka MI modeļi var saturēt neprecizitātes vai interpretācijas kļūdas. Lai pārliecinātos par informācijas precizitāti, vienmēr pārbaudiet oriģinālos ziņu avotus, kas norādīti pie katras ziņas.',
     rightNowInRiga: 'Šobrīd Rīgā',
+    sources: 'Avoti',
+    noSources: 'Avotu nav',
+    publicised: 'Publicēts',
     lastTimeUpdatedWarning: 'Lūdzu, ņemiet vērā: dati pēdējo reizi atjaunoti pirms vairāk nekā 12 stundām.',
     footerHeading: 'Šī vietne piedāvā automatizētu un kategorizētu jaunāko ziņu apkopojumu no vadošajiem Latvijas ziņu portāliem.',
     footerItems: [{

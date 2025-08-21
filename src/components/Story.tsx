@@ -5,6 +5,7 @@ import DelfiLogo from "@/components/DelfiLogo";
 import JaunsLogo from "@/components/JaunsLogo";
 import ApolloLogo from "@/components/ApolloLogo";
 import {StoryInterface} from "@/types";
+import {messages} from "@/messages";
 
 const logos: Record<string, ReactElement> = {
     LSM: <LsmLogo className='w-3 h-3' />,
@@ -30,7 +31,7 @@ export default function Story({ story }: { story: StoryInterface }): ReactElemen
             </p>
             {story.sources[0]?.title ? (
                 <div className='flex flex-wrap items-center gap-3 transition-[opacity,max-height] duration-200 ease-in-out sm:opacity-0 sm:max-h-2 sm:group-hover:opacity-100 sm:group-hover:max-h-7 mb-2 sm:mb-0'>
-                    <small>Avoti:</small>
+                    <small>{messages.sources}:</small>
                     <div className='flex flex-wrap items-center gap-2'>
                         {story.sources.map((source) => (
                             <a key={`${story.headline}-${source.url}`} href={source.url} target='_blank' rel='noopener noreferrer' aria-label={labels[source.name]} className='w-fit h-7 p-2 bg-zinc-300 dark:bg-zinc-800 rounded-full cursor-pointer group/source flex items-center relative'>
@@ -40,7 +41,7 @@ export default function Story({ story }: { story: StoryInterface }): ReactElemen
                                 </small>
                                 <div className='absolute hidden lg:flex left-0 bottom-9 w-72 flex-col gap-2 p-4 bg-gradient-to-br from-zinc-300/60 to-primary/15 dark:from-zinc-800/60 backdrop-blur-md rounded-md transition-all duration-200 ease-in-out opacity-0 group-hover/source:opacity-100 translate-y-4 group-hover/source:translate-y-0 pointer-events-none'>
                                     <h3>{source.title}</h3>
-                                    <h4 className='text-xs'>Publicēts: {source.published_at}</h4>
+                                    <h4 className='text-xs'>{messages.publicised}: {source.published_at}</h4>
                                 </div>
                             </a>
                         ))}
@@ -48,7 +49,7 @@ export default function Story({ story }: { story: StoryInterface }): ReactElemen
                 </div>
             ) : (
                 <div className='transition-[opacity,max-height] duration-200 ease-in-out sm:opacity-0 sm:max-h-2 sm:group-hover:opacity-100 sm:group-hover:max-h-7 mb-2 sm:mb-0'>
-                    <small>Avotu nav</small>
+                    <small>{messages.noSources}</small>
                 </div>
             )}
         </div>

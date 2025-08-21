@@ -32,6 +32,9 @@ export interface MessagesInterface {
     lastTimeUpdated: string;
     disclaimer: string;
     rightNowInRiga: string;
+    sources: string;
+    noSources: string;
+    publicised: string;
     lastTimeUpdatedWarning: string;
     footerHeading: string;
     footerItems: { id: number; heading: string; paragraph: string; }[]

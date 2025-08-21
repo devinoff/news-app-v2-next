@@ -1,7 +1,7 @@
 'use client';
 
 import {ReactElement, useEffect} from 'react';
-import {messages} from "@/app/messages";
+import {messages} from "@/messages";
 import {ArrowsCounterClockwiseIcon} from "@phosphor-icons/react";
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }): ReactElement {
